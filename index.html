@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inventory and Production Solutions</title>
+  <meta name="description" content="ERP implementation, inventory & production consulting, bookkeeping and accounting closings. Predictable prepaid-hours model with clear reporting." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{ --bg:#0b0c10;--panel:#12151b;--muted:#1b1f27;--text:#ecf1f7;--sub:#bac6d6;--brand:#6ea8fe;--accent:#5ee8a6;--link:#9ac3ff;--warn:#ffd166;--shadow: 0 10px 30px rgba(0,0,0,.25);--radius: 18px; }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;background:linear-gradient(180deg,#0b0c10 0%, #0f1116 100%);color:var(--text)}
+    a{color:var(--brand);text-underline-offset:.2em}
+    a:hover{color:var(--link)}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(18,21,27,.8);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--muted)}
+    .navwrap{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 18px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand img{height:34px;width:auto}
+    .brand span{font-weight:700}
+    .menu{display:flex;gap:14px;flex-wrap:wrap}
+    .menu a{color:var(--sub);text-decoration:none;padding:8px 10px;border-radius:10px}
+    .menu a:hover{background:rgba(255,255,255,.05);color:#fff}
+    .menu a.active{color:#fff;background:rgba(255,255,255,.08);}
+
+    .hero{position:relative;overflow:hidden}
+    .hero .wrap{max-width:1100px;margin:0 auto;padding:64px 18px 48px;display:grid;gap:22px}
+    .title{font-size:clamp(28px,5vw,46px);line-height:1.12;margin:0}
+    .subtitle{color:var(--sub);font-size:clamp(16px,2.3vw,18px);max-width:800px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:12px;border:1px solid var(--muted);background:var(--panel);color:#fff;text-decoration:none;box-shadow:var(--shadow);cursor:pointer}
+    .btn.primary{border-color:transparent;background:linear-gradient(180deg,var(--brand),#589afc)}
+    .btn.ghost{background:transparent}
+    .share-buttons{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:10px}
+
+    section{scroll-margin-top:90px}
+    .section{max-width:1100px;margin:0 auto;padding:40px 18px}
+    .grid{display:grid;gap:18px}
+    .two{grid-template-columns:1.2fr .8fr}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    .card{background:var(--panel);border:1px solid var(--muted);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+    h2{font-size:clamp(20px,3vw,28px);margin:4px 0 6px}
+    h3{font-size:18px;margin:4px 0 6px}
+    p{margin:8px 0}
+    ul{margin:0 0 0 18px}
+    .download{display:flex;flex-wrap:wrap;gap:12px}
+    .download a{border:1px solid var(--muted);background:rgba(255,255,255,.02);padding:10px 12px;border-radius:10px;text-decoration:none}
+
+    footer{border-top:1px solid var(--muted);margin-top:36px}
+    .foot{max-width:1100px;margin:0 auto;padding:20px 18px;color:var(--sub);display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+
+    @media (min-width:900px){ .hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center} }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="navwrap">
+      <div class="brand">
+        <img src="/assets/logo-transparent-png.png" alt="Inventory and Production Solutions logo" />
+        <span>Inventory & Production Solutions</span>
+      </div>
+      <div class="menu" role="navigation" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#founder">Founder</a>
+        <a href="#services">Services</a>
+        <a href="#cannabis">Cannabis</a>
+        <a href="#tech">Technology</a>
+        <a href="#how">How We Work</a>
+        <a href="#legal">Resources / Legal</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero">
+    <div class="wrap">
+      <div>
+        <h1 class="title">Streamline Your Business with Expert ERP Implementation & Support</h1>
+        <p class="subtitle">We help small and medium-sized businesses improve efficiency through better inventory, production, and financial management. We use the same ERP platform we recommend to clients for practical, results‑driven solutions.</p>
+        <div class="cta">
+          <a class="btn primary" href="#services">Our Services</a>
+          <a class="btn ghost" href="#contact">Contact Us</a>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Predictable, Prepaid Hours Model</h3>
+          <p class="sub">Purchase a block of hours in advance. We track usage and send you regular balance reports.</p>
+          <ul>
+            <li>Transparent billing</li>
+            <li>Regular updates</li>
+            <li>Top‑up anytime</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="grid two">
+      <div>
+        <h2>About Us</h2>
+        <p>Inventory and Production Solutions (IPS) is a Canadian consulting firm specializing in ERP implementation, process optimization, bookkeeping, and accounting closings. Operating as <strong>14075765 Canada Inc</strong> in Toronto, we serve clients across industries.</p>
+        <ul>
+          <li>We run our own business on the same ERP we recommend (Ecount).</li>
+          <li>Hands‑on expertise across inventory, production, and financials.</li>
+          <li>Predictable pricing via our prepaid‑hours engagement model.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Contact Details</h3>
+        <p>208‑299 Glenlake Avenue, Toronto, ON, M6P 4A6, Canada</p>
+        <p>Email: <a href="mailto:14075765CanadaInc@proton.me">14075765CanadaInc@proton.me</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER -->
+  <section id="founder" class="section">
+  <div class="grid two">
+    <div>
+      <h2>Founder</h2>
+      <p><strong>Pavel Votruba</strong> has worked with ERP systems and Oracle technologies since <strong>1994</strong>, delivering complex implementations and customizations for manufacturers.</p>
+      <ul>
+        <li>Project management in the steel industry and discrete manufacturing.</li>
+        <li>Integration of production, inventory, and procurement with financials for unified reporting.</li>
+        <li>Data migration & cutover planning (from historical transactions to go‑live).</li>
+        <li>Compliance‑ready recordkeeping (lot/batch traceability, QA, audit trails).</li>
+        <li>Go‑live leadership and establishing stable post‑deployment support models.</li>
+      </ul>
+    </div>
+    <div class="card" style="text-align:center">
+      <img src="/assets/logo-png.png" alt="Founder portrait" style="max-width:100%;border-radius:12px;border:1px solid var(--muted)"/>
+      <p style="color:var(--sub);margin-top:8px">Pavel Votruba</p>
+    </div>
+  </div>
+</section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <h2>Services</h2>
+    <div class="cards">
+      <article class="card"><h3>💡 ERP Implementation & Consulting</h3><p>From initial setup to go‑live, we configure and optimize your ERP to match your processes.</p></article>
+      <article class="card"><h3>📦 Inventory & Production Management</h3><p>Streamline operations with accurate tracking, smarter workflows, and better visibility.</p></article>
+      <article class="card"><h3>📊 Bookkeeping & Financial Closings</h3><p>Ongoing bookkeeping support plus smooth month‑end and year‑end closings.</p></article>
+      <article class="card"><h3>🚀 Future: IPS ERP System</h3><p>We’re developing our own ERP platform for even more tailored solutions. Stay tuned.</p></article>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h3>Download Our Brochure</h3>
+      <p>Get a one‑page overview of our services and approach.</p>
+      <div class="download">
+        <a href="/assets/IPS_Client_Brochure.pdf" download>📄 IPS_Client_Brochure.pdf</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CANNABIS INDUSTRY SOLUTION -->
+  <section id="cannabis" class="section">
+    <h2>Industry Solution: Licensed Cannabis (Canada)</h2>
+    <div class="grid two">
+      <div>
+        <div class="card">
+          <h3>🌿 Ready‑Made Customization for Cannabis</h3>
+          <p>We offer a specific <strong>Ecount ERP</strong> configuration built for Canadian licensed cannabis companies with <em>cultivation</em> and <em>processing</em> licences. It’s already refined in production with a client live since <strong>June 1, 2025</strong>.</p>
+          <ul>
+            <li>Seed‑to‑sale traceability: genetics/strain, plant/room tracking, harvest lots, curing/drying, packaging.</li>
+            <li>Inventory, production, sales, and procurement modules fully integrated with financials for one end‑to‑end system.</li>
+            <li>Lot/batch inventory with full forward/backward trace.</li>
+            <li>Production BOMs & yields for oil, pre‑rolls, extracts, edibles, topicals.</li>
+            <li>Quality events (deviations/CAPA), holds/release status.</li>
+            <li>Excise‑relevant data capture; cost layers and duties accounted in COGS.</li>
+            <li>Role‑based access and auditable change history.</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3>📑 Reports & Compliance Support</h3>
+          <p>Templates and data structures aligned to typical Health Canada reporting expectations (e.g., CTLS monthly reporting inputs) and common LP operational KPIs.</p>
+          <ul>
+            <li>CTLS‑friendly data exports (inputs for monthly submissions).</li>
+            <li>Inventory by lot/phase, destruction logs, packaging/label claims data.</li>
+            <li>COA linking and QA release tracking.</li>
+            <li>Sales/returns by SKU & potency ranges.</li>
+          </ul>
+          <p class="sub" style="color:var(--sub)"><strong>Note:</strong> We support your compliance processes, but ultimate compliance responsibility remains with your business. Always review Health Canada guidance and your legal counsel’s advice.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards" style="margin-top:16px">
+      <div class="card">
+        <h3>✅ Live Since June 1, 2025</h3>
+        <p>A Canadian licensed processor has been operating on this configuration since <strong>June 1, 2025</strong>, covering purchasing, production, packaging, QA, and distribution.</p>
+      </div>
+      <div class="card">
+        <h3>📂 Historical Data Migration</h3>
+        <p>We are migrating all historical transactions for 2025 (starting January 1, 2025) into our ERP solution, so that financial reporting can be performed from one integrated system covering operations and financials.</p>
+      </div>
+      <div class="card">
+        <h3>⭐ Key Benefits</h3>
+        <ul>
+          <li>End‑to‑end integration across cultivation, processing, and finance.</li>
+          <li>Automated compliance reporting support (CTLS inputs, COA linking, QA release).</li>
+          <li>Custom solutions for cannabis operations (enhanced dashboards in development using PostgreSQL).</li>
+          <li>Reliable technology stack: Ecount ERP + PostgreSQL.</li>
+        </ul>
+      </div>
+      <div class="card" style="text-align:center">
+        <h3>📊 Cannabis ERP Flow</h3>
+        <img src="/assets/IPS_Cannabis_ERP_Infographic.png" alt="Cannabis ERP Infographic" style="max-width:100%;border-radius:12px;border:1px solid var(--muted)"/>
+        <p style="margin-top:10px"><a href="/assets/IPS_Cannabis_ERP_Infographic.pdf" download>📄 Download this infographic as PDF</a></p>
+        <div class="share-buttons">
+          <a class="btn ghost" href="mailto:?subject=Cannabis ERP Infographic&body=Check out this ERP infographic: https://yourdomain.com/assets/IPS_Cannabis_ERP_Infographic.pdf">📧 Email</a>
+          <a class="btn ghost" href="https://www.linkedin.com/sharing/share-offsite/?url=https://yourdomain.com/assets/IPS_Cannabis_ERP_Infographic.pdf" target="_blank">💼 LinkedIn</a>
+          <a class="btn ghost" href="https://twitter.com/intent/tweet?url=https://yourdomain.com/assets/IPS_Cannabis_ERP_Infographic.pdf&text=Cannabis+ERP+Infographic" target="_blank">🐦 X</a>
+          <button class="btn ghost" onclick="navigator.clipboard.writeText('https://yourdomain.com/assets/IPS_Cannabis_ERP_Infographic.pdf');alert('Link copied to clipboard!');">🔗 Copy Link</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGY STACK -->
+  <section id="tech" class="section">
+    <h2>Technology Stack</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>💼 Ecount ERP</h3>
+        <p>The proven ERP platform we configure and customize for clients. Ecount provides the core modules for inventory, production, sales, procurement, and financials.</p>
+      </div>
+      <div class="card">
+        <h3>🗄️ PostgreSQL</h3>
+        <p>A highly reliable and widely used open‑source database. We use PostgreSQL to build enhanced reporting and dashboard solutions that extend Ecount’s built‑in reporting power.</p>
+      </div>
+      <div class="card">
+        <h3>⚙️ Custom Tools</h3>
+        <p>In addition to Ecount and PostgreSQL, we are building tailored integrations and utilities to fit unique client needs, such as data migration, compliance support, and visualization dashboards.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE WORK -->
+  <section id="how" class="section">
+    <div class="grid two">
+      <div>
+        <h2>How We Work</h2>
+        <p><strong>Simple. Transparent. Predictable.</strong> You prepay for a block of consulting hours; we deliver against those hours and report usage regularly. When the balance runs low, you can top up and keep momentum.</p>
+        <ol>
+          <li>Agree on scope & sign proposal</li>
+          <li>Prepay block of hours</li>
+          <li>We deliver and report progress</li>
+          <li>Top‑up as needed</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h3>Visual Workflow</h3>
+        <img src="/assets/IPS_Client_Workflow_ClientFacing.png" alt="Client Workflow Diagram" style="max-width:100%;border-radius:12px;border:1px solid var(--muted)"/>
+        <div class="share-buttons">
+          <a class="btn ghost" href="mailto:?subject=Client Workflow Diagram&body=Check out this workflow: https://yourdomain.com/assets/IPS_Client_Workflow_ClientFacing.png">📧 Email</a>
+          <a class="btn ghost" href="https://www.linkedin.com/sharing/share-offsite/?url=https://yourdomain.com/assets/IPS_Client_Workflow_ClientFacing.png" target="_blank">💼 LinkedIn</a>
+          <a class="btn ghost" href="https://twitter.com/intent/tweet?url=https://yourdomain.com/assets/IPS_Client_Workflow_ClientFacing.png&text=Client+Workflow+Diagram" target="_blank">🐦 X</a>
+          <button class="btn ghost" onclick="navigator.clipboard.writeText('https://yourdomain.com/assets/IPS_Client_Workflow_ClientFacing.png');alert('Link copied to clipboard!');">🔗 Copy Link</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESOURCES / LEGAL -->
+  <section id="legal" class="section">
+    <h2>Resources / Legal</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Terms & Conditions + Privacy Policy</h3>
+        <p>Our official legal terms, including cookies and refund/support policy.</p>
+        <div class="download">
+          <a href="/assets/IPS_Terms_Privacy_Policy.pdf" download>📑 Full Policy (PDF)</a>
+          <a href="/assets/IPS_Terms_Privacy_Summary.pdf" download>📄 Quick Summary (PDF)</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Ecount ERP Platform</h3>
+        <p>We deliver services using Ecount ERP. Ecount is responsible for platform hosting, security, and backups.</p>
+        <p><a href="https://www.ecount.com" target="_blank" rel="noopener">Visit ecount.com ↗</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <div class="grid two">
+      <div class="card">
+        <h3>Send a Message</h3>
+        <form action="#" method="post" onsubmit="alert('Form handling to be configured');return false;">
+          <label for="name">Name</label><br/>
+          <input id="name" name="name" type="text" required style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--muted);background:#0e1116;color:#fff;margin:6px 0 12px"/>
+          <label for="email">Email</label><br/>
+          <input id="email" name="email" type="email" required style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--muted);background:#0e1116;color:#fff;margin:6px 0 12px"/>
+          <label for="msg">Message</label><br/>
+          <textarea id="msg" name="message" rows="5" required style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--muted);background:#0e1116;color:#fff;margin:6px 0 12px"></textarea>
+          <button class="btn primary" type="submit">Send</button>
+        </form>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Office</h3>
+          <p>208‑299 Glenlake Avenue, Toronto, ON, M6P 4A6, Canada</p>
+          <p>Email: <a href="mailto:14075765CanadaInc@proton.me">14075765CanadaInc@proton.me</a></p>
+          <p class="sub" style="color:var(--sub)">© <span id="year"></span> 14075765 Canada Inc — Inventory and Production Solutions</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="foot">
+      <span>© <span id="year2"></span> Inventory and Production Solutions</span>
+      <a href="#home" style="text-decoration:none">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Year stamps
+    const y=new Date().getFullYear();
+    const yEl=document.getElementById('year'); if(yEl) yEl.textContent=y;
+    document.getElementById('year2').textContent=y;
+
+    // Active nav highlighting via IntersectionObserver
+    const sections = document.querySelectorAll('header.hero, section.section');
+    const navLinks = Array.from(document.querySelectorAll('.menu a'));
+    const linkForId = (id)=> navLinks.find(a=> a.getAttribute('href') === `#${id}`);
+    const obs = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          const id = entry.target.getAttribute('id') || (entry.target.classList.contains('hero') ? 'home' : null);
+          if(!id) return;
+          navLinks.forEach(a=>a.classList.remove('active'));
+          const link = linkForId(id);
+          if(link) link.classList.add('active');
+        }
+      });
+    },{rootMargin:'-40% 0px -55% 0px', threshold:[0,0.5,1]});
+    sections.forEach(s=> obs.observe(s));
+
+    // Smooth scroll on click (extra compatibility)
+    document.querySelectorAll('.menu a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        const href=a.getAttribute('href');
+        const el=document.querySelector(href);
+        if(!el) return;
+        e.preventDefault();
+        el.scrollIntoView({behavior:'smooth', block:'start'});
+      });
+    });
+  </script>
+</body>
+</html>
